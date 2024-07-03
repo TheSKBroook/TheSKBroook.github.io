@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web\css\fontawesome.min.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <nav class = "nav_container">
+        <div class="icon_container">
+            <a href="https://www.linkedin.com/in/ecky521/" rel="linkedIn" target="_blank" class="linked_logo">
+                <img src="image\linkedin.png" alt="linkedIn" class="nav_logo">
+            </a>
+            <a href="https://github.com/TheSKBroook" target="_blank" class="linked_logo">
+                <img src="image\github.png" alt="github" class="nav_logo">
+            </a>
+            <a href="https://drive.google.com/file/d/1W5g9OGri5UHCr92zcZZMeihJQvZx35Aw/view?usp=sharing" target="_blank" class="linked_logo">
+                <img src="image\blank-page.png" alt="resume" class="nav_logo">
+            </a>
+        </div>
+    </nav>
+    <div class="intro">
+        <div class="intro_text">
+            <h1>Hi, I'm <span class="highlight">Eason</span>.<br>I'm a full stack developer.</h1>
+        </div>
+        <div class="btn_container">
+            <button class = "btn"> Skill </button>
+            <button class = "btn"> Project </button>
+            <button class = "btn"> About </button>
+            <button class = "btn"> Contact </button>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill_grid">
+            <div class="skill_title">
+                <h2>Skills</h2>
+            </div>
+            <div class="skill_button">
+                <div class="button top" onmouseenter = "showSkillInfoTOP()" onmouseleave = "showSkillInfoORI()">
+                    <h1> Front End </h1>
+                </div>
+                <div class="button middle" onmouseenter = "showSkillInfoMID()" onmouseleave = "showSkillInfoORI()">
+                    <h1> Tools </h1>
+                </div>
+                <div class="button bottom" onmouseenter = "showSkillInfoBOT()" onmouseleave = "showSkillInfoORI()">
+                    <h1> Back End </h1>
+                </div>
+            </div>
+            <div class="skill_info">
+                <h3 id="skillInfoText" class = "visible">"It is essential to have good tools, but it is also essential that the tools should be used in the right way." - Wallace D. Wattles.</h3>
+            </div>
+            <div class="information"></div>
+        </div>
+    </div>
+    <div class="project"></div>
+    <script src="script.js"></script>
+</body>

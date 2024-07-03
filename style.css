@@ -1,0 +1,176 @@
+*{ 
+    margin : 0px;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav_container {
+    position : sticky;
+    top : 0;
+    z-index : 9999;
+    display : flex;
+    justify-content: flex-end;
+    align-items : center;
+    padding : 0px;
+    margin : 0px;
+    background-color : white;
+}
+
+.icon_container {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.linked_logo {
+    text-decoration: none;
+    width : auto;
+    height : auto;
+}
+
+.highlight {
+    color :rgb(73, 173, 206)
+}
+
+.nav_logo {
+    width : 30px;
+    height : auto;
+    padding : 20px 30px;
+    background-color : white;
+}
+
+.nav_logo:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.intro {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    height : 90vh;
+    margin : 0 15px;
+    transition: margin-left 0.5s ease;
+}
+
+.intro_text {
+    padding : 0px;
+    margin : 0px 25vh;
+    font-size : 32px;
+}
+
+.btn_container {
+    padding : 40px 0px;
+    margin : 0px 25vh;
+    display : flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    padding : 5px 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color :rgb(73, 173, 206);
+    border-color : rgb(73, 173, 206);
+    border-style: solid;
+}
+
+
+.btn:hover {
+    background-color: rgb(73, 173, 206);
+    color : white;
+    transition: 0.12s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .intro {
+        margin-left: 16%;
+    }
+}
+
+.skill {
+    background-color: rgb(73, 173, 206);
+    margin : 0px 0px;
+    padding : 0px;
+    height : 700px;
+    width : auto;
+}
+
+.skill_grid {
+    display : grid;
+    color : white;
+    grid-template-columns: 30% 70%;
+    grid-template-rows : 30% 70%;
+    padding : 10% 10%;
+    height : 65%;
+}
+
+.skill_title {
+    grid-column: 2 / 3;
+    grid-row : 1;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 2.5rem;
+}
+
+.skill_button {
+    grid-column : 1/2;
+    grid-row : 2;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    font-size : 0.9rem;
+}
+
+.skill_button .button {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    width : 50%;
+    height : 100%;
+    padding : 0px 20px;
+}
+
+.skill_button .button h1 {
+    padding : 0px 20px;
+    color : rgb(73, 173, 206);
+    border : solid;
+    border-radius: 9999px;
+    border-color : white;
+    background-color: white;
+}
+
+.project {
+    height : 600px;
+}
+
+.skill_info {
+    grid-column : 2/3;
+    grid-row : 2;
+    font-size : 1.7rem;
+    transition : 1s;
+}
+
+.skill_info h3 {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    opacity: 0;
+    transform: translateY(60px);
+    text-align : center;
+    font-weight : 150;
+}
+
+.skill_info h3.visible {
+    opacity: 1;
+    transform: translateY(15px);
+}
+
+.skill_info h4 { 
+    text-align : center;
+}
+
+.skill_info ul { 
+    text-align:left;
+    list-style-position: inside;
+}
