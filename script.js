@@ -23,7 +23,7 @@ function showSkillInfoMID() {
 
     // Change the text after a short delay to allow the animation to reset
     setTimeout(() => {
-        skillInfoText.innerText = "Tools";
+        skillInfoText.innerHTML = "<h4>Tools</h4><br><ul><li>Git</li><li>CI-CD</li><li>AWS</li><li>Agile</li></ul>"
         
         // Add the visible class to start the animation
         skillInfoText.classList.add('visible');
@@ -37,7 +37,7 @@ function showSkillInfoBOT() {
 
     // Change the text after a short delay to allow the animation to reset
     setTimeout(() => {
-        skillInfoText.innerText = "Back End Skills";
+        skillInfoText.innerHTML = "<h4>Back End</h4><br><ul><li>Node</li><li>SQL/NoSQL</li><li>API</li></ul>"
         
         // Add the visible class to start the animation
         skillInfoText.classList.add('visible');
